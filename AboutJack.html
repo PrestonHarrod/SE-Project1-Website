@@ -1,33 +1,103 @@
+
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+</style>
 <body>
 
-<h1>About Us: Jack Hannah</h1>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+    <h3 class="w3-padding-64"><b>SE Team 3 Website</h3>
+    </div>
+    <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/what_is_cs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What is CS</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/WhyCSPage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why choose CS</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/Learn_More_About_CS.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Learn More</a>
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/PreparePage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Prepare</a>
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/CSCareers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Careers</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/Oklahoma_Christian_University.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">OC</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/about_us_page.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    </div>
+</nav>
 
-<p>
-    My name is Jack Hannah, and I am currently a senior at Oklahoma Christian University. 
-    I am currently working on a dual-degree program to get my Bachelor's and my Master's at the same, my Bachelor's
-    being Computer Science with Gaming and Animation and my Master's being Computer Science with an AI focus.
-</p>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
 
-<p>
-    The reason that I chose Computer Science as my major is because my background, first of all. I grew up
-    with a dad who was an IT guy, and he was always working on some computer project. There were always spare 
-    computer parts around the house. These experiences that I had with my dad growing up was the gateway into 
-    my interests with computers. Going into high school is where I diverge from my dad's path a bit as I became
-    more interested in the software than the hardware. I took many computer classes in high school and wound up
-    attending a VoTech called Francis Tuttle for Software Development. By this point, I was fairly sure that Computer
-    Science was the field that I wanted to go into, and that's how I ended up coming to OC.
-</p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<p>
-    One of my favorite hobbies, as could be told by my degree path, is gaming with my favorite genre being FPS.
-    Competitive games like Overwatch, Splitgate, and Rocket League are where I sink a lot of my time. Another one of
-    my hobbies is reading, and my favorite genre is fantasy. My favorite book series is Stormlight Archives by Brandon
-    Sanderson, and I am currently reading Magic Kingdom For Sale. The last hobby that I will list is Disc Golfing. OC is 
-    home to a great disc golfing course to practice the basics and is often where I go to practice.
-</p>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>About Us: </b></h1>
+    <h1 class="w3-jumbo w3-text-red"><b>Jack Hannah</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding" style="margin-left:-100px">
+    <div class="w3-half">
+        <img src="cover.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+        <p> 
+            My name is Jack Hannah, and I am currently a senior at Oklahoma Christian University. 
+            I am currently working on a dual-degree program to get my Bachelor's and my Master's at the same, my Bachelor's
+            being Computer Science with Gaming and Animation and my Master's being Computer Science with an AI focus.
+        </p>
+        
+        <p>
+            The reason that I chose Computer Science as my major is because my background, first of all. I grew up
+            with a dad who was an IT guy, and he was always working on some computer project. There were always spare 
+            computer parts around the house. These experiences that I had with my dad growing up was the gateway into 
+            my interests with computers. Going into high school is where I diverge from my dad's path a bit as I became
+            more interested in the software than the hardware. I took many computer classes in high school and wound up
+            attending a VoTech called Francis Tuttle for Software Development. By this point, I was fairly sure that Computer
+            Science was the field that I wanted to go into, and that's how I ended up coming to OC.
+        </p>
+
+        <p>
+            One of my favorite hobbies, as could be told by my degree path, is gaming with my favorite genre being FPS.
+            Competitive games like Overwatch, Splitgate, and Rocket League are where I sink a lot of my time. Another one of
+            my hobbies is reading, and my favorite genre is fantasy. My favorite book series is Stormlight Archives by Brandon
+            Sanderson, and I am currently reading Magic Kingdom For Sale. The last hobby that I will list is Disc Golfing. OC is 
+            home to a great disc golfing course to practice the basics and is often where I go to practice.
+        </p>
+    </div>
+  </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+</script>
 
 </body>
 </html>
