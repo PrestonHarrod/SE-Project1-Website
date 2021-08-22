@@ -1,22 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
 
-<h1>Ways to Prepare to be a CS Major</h1>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+    <h3 class="w3-padding-64"><b>SE Team 3 Website</h3>
+    </div>
+    <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/what_is_cs.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What is CS</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/WhyCSPage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Why choose CS</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/Learn_More_About_CS.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Learn More</a>
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/PreparePage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Prepare</a>
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/CSCareers.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Careers</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/Oklahoma_Christian_University.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">OC</a> 
+    <a href="http://project1.eaglesoftwareteam.com/project1/2021t3-dev/about_us_page.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    </div>
+</nav>
 
-    <p>Looking to learn all the aspects of CS as a whole is sure to be daunting, but there are small ways to break down the major components 
-        while you are still in high school. Here are some options:
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Prepare to be a </b></h1>
+    <h1 class="w3-jumbo w3-text-red"><b>Computer Scientist</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-row-padding">
+    <img src="https://www.centreforpublicimpact.org/img/containers/assets/wp-images/2016/11/digital-blog-banner.jpg/926ca7407a79578fdb74d540dfb2d6fa.jpg" style="width:100%">
+  </div>
+
+  
+  <p>Looking to learn all the aspects of CS as a whole is sure to be daunting, but there are small ways to break down the major components 
+    while you are still in high school. Here are some options:
 </p>
 
 <h3>High School Courses </h3>
 <p>One of the best ways to prepare for a CS degree is to start out taking Computer Science courses in High School. Some examples of courses to take are: 
 <ul>
-    <li>Computer Science</li>
-    <li>AP Computer Science</li>
-    <li>Computer Science Principles</li>
-    <li>AP Computer Science Principles</li> 
-    <li>Computer Architecture</li>
-    <li>Computer Literacy</li>
+<li>Computer Science</li>
+<li>AP Computer Science</li>
+<li>Computer Science Principles</li>
+<li>AP Computer Science Principles</li> 
+<li>Computer Architecture</li>
+<li>Computer Literacy</li>
 </ul>
 Something to consider is to take the regular version of these classes before taking the AP versions as the regular version will give you experience
 going into the more difficult class. Taking the AP classes for CS is also a great way to prepare for college as they count towards your college credit.
@@ -40,26 +91,46 @@ Having a list of personal projects will also allow employers to see not only you
 
 <h3>Computer Knowledge</h3>
 <p>
-    While it might seem like an obvious that general computer knowledge is vital to being a CS major, there is a lot of helpful
-    skills to learn that some people are not aware of.
+While it might seem like an obvious that general computer knowledge is vital to being a CS major, there is a lot of helpful
+skills to learn that some people are not aware of.
 
-    <h5>Typing</h5>
-	Typing may not seem like the most forefront skill to learn when trying to program; however, being able to type fast and well will make 
-	your whole programming experience much easier and less frustrating.
-	Typing.com is a great free resource to help teach the standard way to type.
+<h5>Typing</h5>
+Typing may not seem like the most forefront skill to learn when trying to program; however, being able to type fast and well will make 
+your whole programming experience much easier and less frustrating.
+Typing.com is a great free resource to help teach the standard way to type.
 
-	<h5>Keyboard Shortcuts</h5>
-	Likewise with typing, learning the available keyboard shortcuts will allow you to work much more effieciently.
-	Shortcuts like Alt+Tab to switch between open windows on your computer are essential 
-	Combining typing with keyboard shortcuts will make your flow together easier and will allow you to focus more on the content
-	of the programming rather than the act of programming itself.
+<h5>Keyboard Shortcuts</h5>
+Likewise with typing, learning the available keyboard shortcuts will allow you to work much more effieciently.
+Shortcuts like Alt+Tab to switch between open windows on your computer are essential 
+Combining typing with keyboard shortcuts will make your flow together easier and will allow you to focus more on the content
+of the programming rather than the act of programming itself.
 
-	<h5>Microsoft Excel</h5>
-	Excel is an industry standard for data storage and management.
-    The essentials of Excel may be taught in a Computer literacy class in high school.
-	Excel has advanced functions that will apply an algorithm to multiple cells at once, so learning the syntax of how to make and apply 
-	that algorithm is an important skill to learn.
+<h5>Microsoft Excel</h5>
+Excel is an industry standard for data storage and management.
+The essentials of Excel may be taught in a Computer literacy class in high school.
+Excel has advanced functions that will apply an algorithm to multiple cells at once, so learning the syntax of how to make and apply 
+that algorithm is an important skill to learn.
 </p>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
 </body>
 </html>
